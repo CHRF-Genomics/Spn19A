@@ -1,0 +1,11 @@
+Subtype,Source,Period,Freq
+19A-I,Invasive,Post,20
+19A-I,Invasive,Pre,15
+19A-I,NP,Post,45
+19A-I,NP,Pre,12
+19A-I,OM,Post,32
+19A-I,OM,Pre,25
+19A-I,Urine,Post,3
+19A,Invasive,Pre,17
+19A,NP,Post,2
+19A,NP,Pre,3
