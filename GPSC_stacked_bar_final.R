@@ -7,7 +7,7 @@ library(dplyr)
 library(svglite)
 
 # Loading data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 ###################################################
 # Stacked bar plot - GPSC vs Year (Invasive only) #
@@ -96,7 +96,7 @@ ggsave(filename = "GPSC_by_Year_inv_stacked.svg", plot = P, width = 7, height = 
 ###########################################################
 # Stacked bar plot - GPSC vs Year (Otitis media, OM only) #
 ###########################################################
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Filter the data to include only SourceFinal="OM"
 data_om <- data %>%
@@ -180,7 +180,7 @@ ggsave(filename = "GPSC_by_Year_OM_stacked.svg", plot = P, width = 4.89, height 
 #############################################
 # Stacked bar plot - GPSC vs Year (NP only) #
 #############################################
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Filter the data to include only SourceFinal="NP"
 data_np <- data %>%
