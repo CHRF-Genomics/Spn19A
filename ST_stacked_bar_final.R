@@ -11,7 +11,7 @@ library(svglite)
 # Stacked bar plot - ST vs Year (all data)    #
 ###############################################
 # Loading data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Group ST <4 genomes to 'Other'
 ST_counts <- data %>%
@@ -96,7 +96,7 @@ ggsave(filename = "ST_by_Year_stacked.svg", plot = P, width = 8, height = 6, uni
 # Stacked bar plot - ST vs Year (Invasive only) #
 ###################################################
 # Loading data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Filter the data to include only SourceFinal="Invasive"
 data_inv <- data %>%
@@ -185,7 +185,7 @@ ggsave(filename = "ST_by_Year_Inv_stacked.svg", plot = P, width = 7, height = 6,
 # Stacked bar plot - ST vs Year (Otitis media, OM only) #
 ###########################################################
 # Loading data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Filter the data to include only SourceFinal="OM"
 data_om <- data %>%
@@ -274,7 +274,7 @@ ggsave(filename = "ST_by_Year_OM_stacked.svg", plot = P, width = 4.89, height = 
 # Stacked bar plot - ST vs Year (NP only) #
 #############################################
 # Loading data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Filter the data to include only SourceFinal="NP"
 data_np <- data %>%
