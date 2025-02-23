@@ -11,7 +11,7 @@ library(svglite)
 ##############################################
 
 # Load the data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Count the number of observations per year and ResProfile
 data_summary <- data %>%
@@ -90,7 +90,7 @@ ggsave(filename = "Res_by_Year_stacked.svg", plot = P, width = 10, height = 6, u
 # Stacked bar plot - Res vs GPSC (all data) #
 ##############################################
 # Load the data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Count the occurrences of GPSC
 gpsc_counts <- data %>%
@@ -182,7 +182,7 @@ ggsave(filename = "Res_by_GPSC_stacked.svg", plot = P, width = 8, height = 6, un
 # Stacked bar plot - Res vs ST (all data) #
 ##############################################
 # Load the data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 # Count the occurrences of ST
 st_counts <- data %>%
@@ -280,7 +280,7 @@ library(dplyr)
 library(svglite)
 
 # Load the data
-data <- read.csv("Supplementary_Data_01.csv")
+data <- read.csv("Supplementary_Data_01_v2.csv")
 
 create_stacked_bar_plot <- function(data, source_type, filename) {
   
